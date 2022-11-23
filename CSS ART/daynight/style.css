@@ -1,0 +1,136 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #0c1330;
+}
+
+.container{
+    height: 25em;
+    width: 16.8em;
+    background: linear-gradient(#3f006c, #750060, #b10042,#da4837,#f7bb38);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 16.8em;
+    animation: colors 12s infinite forwards;
+}
+
+@keyframes colors{
+    10%{
+        background: linear-gradient(#3f006c, #750060, #b10042,#da4837,#f7bb38);
+    }
+
+    53%{
+        background: linear-gradient(#14045f, #331a99, #282bce, #1555ec, #1e84f7);
+    }
+
+    55%{
+        background: linear-gradient(#14045f, #331a99, #282bce, #1555ec, #1e84f7);
+    }
+
+    98%{
+        background: linear-gradient(#3f006c, #750060, #b10042,#da4837,#f7bb38);
+    }
+
+    100%{
+        background: linear-gradient(#3f006c, #750060, #b10042,#da4837,#f7bb38);
+    }
+}
+
+.spinner{
+    height: 28.12em;
+    width: 28.12em;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 8.75em;
+    left: -5.62em;
+    animation: spin 12s infinte forwards;
+    
+}
+
+@keyframes spin{
+    10%{
+        transform: rotate(0deg);
+    }
+
+    45%{
+        transform: rotate(180deg);
+    }
+    55%{
+        transform: rotate(180deg);
+    }
+
+}
+
+.sun{
+    background-color: #f7f7de;
+    height: 3.75em;
+    width: 3.75em;
+    border-radius: 50%;
+    position: absolute;
+    left: 12.3em;
+    top: -1.8em;
+
+}
+
+.sun:before,
+.sun:after{
+    position: absolute;
+    content: "";
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+
+}
+
+.sun:before{
+    height: 7.5em;
+    width: 7.5em;
+    right: -1.87em;
+    bottom: -1.87em;
+}
+
+.sun:after {
+    height: 12.5em;
+    width: 12.5em;
+    right: -4.37em;
+    bottom: -4.37em;
+}
+
+.moon{
+    height: 3.75em;
+    width: 3.75em;
+    box-shadow: 1.25em -1.25em #f7f7de;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3.1em;
+    left: 10.93em;
+
+    
+}
+
+.moon:before, 
+.moon:after{
+    position: absolute;
+    content: "";
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+
+}
+
+.moon:before{
+    height: 6.25em;
+    width: 6.25em;
+    right: -2.5em;
+    bottom: 0;
+}
+
+.moon:after{
+    height: 11.8em;
+    width: 11.8em;
+    left: -2.8em;
+    bottom: -2.8em;
+
+}
